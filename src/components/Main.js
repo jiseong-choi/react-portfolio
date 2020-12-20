@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon,{ GithubOutlined,MailOutlined,YoutubeFilled } from '@ant-design/icons';
+import { GithubOutlined,MailFilled,YoutubeFilled } from '@ant-design/icons';
 
 function Main() {
     console.log('Main')
@@ -21,19 +21,25 @@ function Main() {
 
     return (
         <div >
-            <div>
+            <div className="icons" style={{ display: 'flex' }}>
                 <GithubOutlined
                     onClick={onClickHandler}
-                    style={{ margin:'2px' }}
+                    style={{ margin:'5px',fontSize:'27px' }}
                 />
-                <MailOutlined
+                <MailFilled
                     onClick={onClickHandler1}
-                    style={{ margin:'2px' }}
+                    style={{ margin:'5px',fontSize:'26px' }}
                 />
                 <YoutubeFilled
                     onClick={onClickHandler22}
-                    style={{ margin:'2px' }}
+                    style={{ margin:'5px',fontSize:'28px' }}
                 />
+            </div>
+            <div>
+                <h1 style={{ fontSize:'20px'}}>현탁ㅋ타가타같가ㅏㄱㅌ가</h1>
+                <span>
+                dkdkdkdkdkkdkd
+                </span>
             </div>
         </div>
     )
