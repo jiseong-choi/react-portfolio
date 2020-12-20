@@ -1,5 +1,5 @@
 import React from 'react'
-import { GithubOutlined,MailFilled,YoutubeFilled } from '@ant-design/icons';
+import { GithubOutlined, MailFilled, YoutubeFilled } from '@ant-design/icons';
 
 function Main() {
     console.log('Main')

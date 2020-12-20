@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import Main from './components/Main'
 import Skill from './components/Skill'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
       {Page === 2 && 
         <Skill style={{ width:'100%', height:'100%' }} />
       }
-      
+      <Footer />
     </React.Fragment>
   );
 }
