@@ -1,10 +1,10 @@
 import React,{useState,useEffect} from 'react'
 import Main from './components/Main'
-import Description from './components/Description'
+import Skill from './components/Skill'
 
 function App() {
 
-  const [Page, setPage] = useState(0)
+  const [Page, setPage] = useState(1)
 
   const onScroll = (e) => {
     const winScroll = e.deltaY
@@ -29,18 +29,18 @@ function App() {
 
   useEffect(() => {
     window.addEventListener("wheel", onScroll);
-    return () => window.removeEventListener("scroll", onScroll)
+    return () => window.removeEventListener("wheel", onScroll)
   });
-
+  console.log('loaded')
   return (
     <React.Fragment>
       {Page === 1 && 
-        <Main />
+        <Main style={{ width:'100%', height:'100%' }} />
       }
       {Page === 2 && 
-        <Description />
+        <Skill style={{ width:'100%', height:'100%' }} />
       }
-      {console.log('loaded')}
+      
     </React.Fragment>
   );
 }
