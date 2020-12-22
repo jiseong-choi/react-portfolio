@@ -1,13 +1,18 @@
 import React from 'react'
 import '../App.css'
+import VanillaGraph from '../components/VanillaGraph'
 
-function Description() {
+function Skill() {
     //console.log('Description')
     return (
         <div id='test'>
-            Skill
+            <div>
+                <div> <VanillaGraph /> </div>
+                <div>ReactJS</div>
+                <div>ExpressJS</div>
+            </div>
         </div>
     )
 }
 
-export default Description
+export default Skill
