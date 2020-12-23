@@ -8,8 +8,6 @@ function Skill() {
         <div id='test'>
             <div>
                 <div> <VanillaGraph /> </div>
-                <div>ReactJS</div>
-                <div>ExpressJS</div>
             </div>
         </div>
     )
